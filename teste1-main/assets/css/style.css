@@ -1,0 +1,123 @@
+
+.container{
+background-color: rgb(1, 5, 7);
+display: grid;
+grid-gap: 1px 1px;
+grid-template-areas: 
+"header header header header header"
+"aside content content content content"
+"aside content2 content2 content2 content2"
+"footer footer footer footer footer"
+}
+
+.style{
+    background-color: red;
+    margin: 5px;
+    color: beige;
+}
+
+.header-esquerda{
+    width: 15%;
+}
+
+.header-direita{
+    width: 20%;
+}
+
+.style-header{
+    background-color: blue;
+    height: 50px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    }
+
+.header{
+grid-area: header;
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
+height: 70px;
+align-items: center;
+}
+   
+.style-aside{
+    background-color: blue;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+    height: 40%; 
+}
+
+.aside{
+        grid-area: aside;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        height: 200px;
+        background-color: yellow;
+          }
+
+.style-content{
+  background-color: blue;
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 15%;
+  height: 65%;
+  display: flex;
+  }
+
+.content{
+    grid-area: content;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: yellow;
+    align-items: center;
+    }
+
+.content2-esquerda{
+    width: 15%;
+    height: 100%;
+    margin: -23px;  
+}
+
+.content2-direita{
+width: 15%;
+height: 100%;
+margin: -22px;;
+}
+
+.content2-meio{
+    width: 50%;
+    height: 40%;
+}
+
+.style-content2{
+    background-color: blue;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+.content2{
+grid-area: content2;
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
+background-color: yellow;
+align-items: center;
+}
+
+.footer{
+    grid-area: footer;
+    height: 40px;
+}
