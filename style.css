@@ -41,11 +41,25 @@ grid-template-areas:
         flex-direction: column;
         align-items: center;
         flex: 1;
-    }
+        height: 300px;
+          }
+.parte-superior{
+    grid-area: parte-superior;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    height: 50px;
+   width: 50px;
+   margin: 40px;
+      }
+}
 
 
 .style-content{
-    background-color: blue;
+  background-color: blue;
 }
 
 .content{
@@ -67,6 +81,7 @@ grid-template-areas:
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: yellow;
 }
 
 ,.style-footer{
